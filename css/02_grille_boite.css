@@ -1,46 +1,37 @@
-/* Mes styles pour la page Dolomites  */
-
 body {
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
+    background-color: lightgray;
 }
-/* Couleurs génériques et textes centrés  */
-.bleu {
-    background-color:rgb(165, 241, 234);
+header {
+    margin: auto;
+    width: 1200px;
     text-align: center;
+    border: solid 4px rgb(241, 189, 240);
+    margin-top: auto;
+    background-color: rgb(226, 225, 225);
+    height: 140px;
+    position: sticky; 
+    top: 0;
 }
-.jaune {
-    background-color: rgb(243, 243, 211);
-    text-align: center;
-}
-/* conteneur principal  */
-.conteneur {
-    margin: 0 auto;
-    background-color: lightblue;
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-/* Main et flex pour mettre le footer en bas  */
-main {
-    flex: 1;
-}
-
-footer {
-    flex-shrink: 0;
-}
-/* Pour la navigation du haut  */
-nav {
-    height: 80px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-/* L'élément menu est flex pour séparer les enfants de manière égales */
 #menu {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 10px;
 }
+nav {
+  
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.conteneur {
+    margin: 0 auto;
+    width: 800px;
+    min-height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -53,7 +44,6 @@ nav {
     flex-wrap: wrap;
 }
 
-/* définition de la largeur des colonnes en %  on calcule la première colonne (100/12) que l'on multiplie pour avoir les autres valeurs*/
 
 .col-1 {
     width: 8.333333%;
@@ -225,7 +215,7 @@ nav {
 
 @media (min-width: 1097px) {
     body {
-        background-color: white;
+        background-color:lightgray;
     }
     .conteneur {
         width: 1200px;
